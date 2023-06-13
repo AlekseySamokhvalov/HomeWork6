@@ -1,17 +1,54 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+          task1();
+          task2();
+          task3();
+          task4();
+          task5();
+          task6();
+          task7();
+          task8();
+          task9();
+          task10();
+    }
+    public static void task1 () {
+        System.out.println("Задача 1");
+    }
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+    public static void task2 () {
+        System.out.println("Задача 2");
+    }
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+    public static void task3 () {
+        System.out.println("Задача 3");
+    }
+
+    public static void task4 () {
+        System.out.println("Задача 4");
+    }
+
+    public static void task5 () {
+        System.out.println("Задача 5");
+    }
+
+    public static void task6 () {
+        System.out.println("Задача 6");
+    }
+
+    public static void task7 () {
+        System.out.println("Задача 7");
+    }
+
+    public static void task8 () {
+        System.out.println("Задача 8");
+    }
+
+    public static void task9 () {
+        System.out.println("Задача 9");
+    }
+
+    public static void task10 () {
+        System.out.println("Задача 10");
     }
 }
