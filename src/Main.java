@@ -69,6 +69,13 @@ public class Main {
 
     public static void task8 () {
         System.out.println("Задача 8");
+        int savingsPerMonth = 29000;
+        int totalSavings = 0;
+
+        for (int month = 1; month <= 12; month++) {
+            totalSavings += savingsPerMonth;
+            System.out.println("Месяц " + month + ", сумма накоплений равна " + totalSavings + " рублей.");
+        }
     }
 
     public static void task9 () {
