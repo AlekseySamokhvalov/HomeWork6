@@ -30,7 +30,7 @@ public class Main {
 
     public static void task3 () {
         System.out.println("Задача 3");
-        for(int i = 2; i < 17; i = i + 2){
+        for(int i = 0; i < 17; i = i + 2){
             System.out.printf(" %d",i);
         }
         System.out.println("");
@@ -80,16 +80,15 @@ public class Main {
 
     public static void task9 () {
         System.out.println("Задача 9");
-        int savingsPerMonth = 29000;
-        double annualInterestRate = 0.12;
-        double totalSavings = 0;
+        int initialDeposit = 29000;
+        double interestRate = 0.12;
+        double totalSavings = initialDeposit;
 
         for (int month = 1; month <= 12; month++) {
-            double monthlyInterestRate = annualInterestRate / 12;
-            double interestEarned = totalSavings * monthlyInterestRate;
-            totalSavings += savingsPerMonth + interestEarned;
+            double monthInterest = (interestRate / 12) * totalSavings ;
+            totalSavings += monthInterest;
             System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей.%n", month, totalSavings);
-            //System.out.println("Месяц " + month + ", сумма накоплений равна " + totalSavings + " рублей.");
+            totalSavings += initialDeposit;
         }
     }
 
@@ -101,4 +100,5 @@ public class Main {
             System.out.println(multiplier + "*" + i + "=" + (multiplier * i));
         }
     }
+
 }
