@@ -80,6 +80,17 @@ public class Main {
 
     public static void task9 () {
         System.out.println("Задача 9");
+        int savingsPerMonth = 29000;
+        double annualInterestRate = 0.12;
+        double totalSavings = 0;
+
+        for (int month = 1; month <= 12; month++) {
+            double monthlyInterestRate = annualInterestRate / 12;
+            double interestEarned = totalSavings * monthlyInterestRate;
+            totalSavings += savingsPerMonth + interestEarned;
+            System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей.%n", month, totalSavings);
+            //System.out.println("Месяц " + month + ", сумма накоплений равна " + totalSavings + " рублей.");
+        }
     }
 
     public static void task10 () {
